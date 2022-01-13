@@ -195,6 +195,13 @@ header {
   z-index: 1000;
 }
 
+.nav-toggle:focus,
+.nav-toggle:active,
+.nav-toggle-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .nav-open .nav {
   transform: translateX(0);
 }
@@ -208,21 +215,19 @@ header {
 }
 
 .nav-open .hamburger::before {
-  transform: rotate(90deg) translateX(-6px);
+  transform: rotate(90deg) translateX(-10px);
 }
 
 .nav-open .hamburger::after {
   opacity: 0;
 }
 
-.hamburger {
-  display: block;
-  position: relative;
-}
-
 .hamburger,
 .hamburger::before,
 .hamburger::after {
+  position: fixed;
+  top: 20px;
+  right: 10px;
   background: var(--clr-accent);
   width: 2em;
   height: 3px;
@@ -239,7 +244,7 @@ header {
 }
 
 .hamburger::before {
-  top: 6px;
+  top: 10px;
 }
 .hamburger::after {
   bottom: 6px;
@@ -255,8 +260,8 @@ header {
   }
   .navlist_desktop {
     position: fixed;
-    top: -20px;
-    font-weight: bold;
+    top: -25px;
+    font-size: 25px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -269,9 +274,15 @@ header {
   }
 
   .navlist_desktop a {
-    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    color: var(--clr-dark);
     text-decoration: none;
     padding: 10px;
+  }
+
+  .navlink_desktop:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
   }
 }
 
@@ -336,7 +347,7 @@ header {
   }
 }
 
-/*  My skills section  */
+/*  My diensten section  */
 
 .my-skills {
   background-color: var(--clr-dark);
@@ -344,6 +355,7 @@ header {
   background-size: cover;
   color: var(--clr-light);
   text-align: center;
+  position: relative;
 }
 
 .section__title--skills {
@@ -367,7 +379,10 @@ header {
 
 .skill {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 20px 40px;
+  border-radius: 15px;
 }
 
 @media (min-width: 800px) {
