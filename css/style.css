@@ -277,15 +277,15 @@ header {
     font-weight: var(--fw-bold);
     color: var(--clr-dark);
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 25px;
+    font-family: var(--ff-primary);
   }
   .navitem_desktop:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   .navlink_desktop:hover {
-    background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 15px;
+    background-color: rgba(84, 127, 55, 1);
   }
 }
 
@@ -452,7 +452,7 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item {
