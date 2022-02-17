@@ -453,10 +453,10 @@ header {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  max-height: 750px;
+  max-height: 700px;
   position: relative;
   margin: auto;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
 }
 
@@ -490,12 +490,12 @@ header {
 
 .prev {
   left: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0 3px 3px 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev,
-.next {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
