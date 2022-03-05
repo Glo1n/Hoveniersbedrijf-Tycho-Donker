@@ -473,8 +473,8 @@ header {
 
 @media only screen and (max-width: 1000px) {
   .slideshow-container {
-    width: 350px;
-    height: 280px;
+    width: 310px;
+    height: 224px;
     position: relative;
     margin: auto;
     overflow: hidden;
