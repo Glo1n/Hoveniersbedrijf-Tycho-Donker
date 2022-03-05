@@ -1,0 +1,36 @@
+#tuinaanleg h2 {
+  text-align: center;
+  padding: 0 1em;
+}
+
+#tuinaanleg h3 {
+  text-align: center;
+  padding: 2em;
+}
+
+#tuinaanleg p {
+  margin: 0 2em;
+  text-align: center;
+}
+
+img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  padding-top: 0;
+}
+
+#tuinaanleg {
+  padding-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  #tuinaanleg p {
+    margin: 0 0.5em;
+  }
+
+  img {
+    width: 90%;
+  }
+}
