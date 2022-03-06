@@ -27,9 +27,6 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="./img/testlogo.jpg" alt="logo" />
-      </div>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
       </button>
@@ -45,7 +42,7 @@
             <a href="#over_mij" class="nav__link">Over mij</a>
           </li>
           <li class="nav__item">
-            <a href="#mijn_tuinen" class="nav__link">Mijn tuinen</a>
+            <a href="#projecten" class="nav__link">Projecten</a>
           </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
@@ -66,7 +63,7 @@
           <a href="#over_mij" class="navlink_desktop">Over mij</a>
         </li>
         <li class="navitem_desktop">
-          <a href="#mijn_tuinen" class="navlink_desktop">Mijn tuinen</a>
+          <a href="#projecten" class="navlink_desktop">Projecten</a>
         </li>
         <li class="navitem_desktop">
           <a href="#contact" class="navlink_desktop">Contact</a>
@@ -81,7 +78,7 @@
       <p class="section__subtitle section__subtitle--intro">
         voor al uw tuin oplossingen
       </p>
-      <img src="img/testlogo.jpg" alt="logo" class="intro__img" />
+      <img src="img/visitekaart-los-14.png" alt="logo" class="intro__img" />
     </section>
 
     <section class="my-skills" id="diensten">
@@ -90,11 +87,20 @@
         <div class="skill">
           <h3>Aanleg</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Een tuin is meer dan alleen een verzameling van planten en
+            materialen. Een tuin is een plaats van samenkomen. Spelende
+            kinderen, ’s avonds drankje op terras of een familiebarbecue, elke
+            tuin is anders...
           </p>
+          <a href="./Aanleg.html"
+            ><button>
+              lees meer
+              <img
+                src="./img/baseline_double_arrow_black_18dp.png"
+                alt="lees meer knop"
+                id="fotoaanleg"
+              /></button
+          ></a>
         </div>
 
         <div class="skill">
@@ -118,7 +124,7 @@
         </div>
       </div>
 
-      <a href="#mijn_tuinen" class="btn">Projecten</a>
+      <a href="#projecten" class="btn">Projecten</a>
     </section>
 
     <section class="about-me" id="over_mij">
@@ -129,105 +135,189 @@
 
       <div class="about-me__body">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Mijn naam is Tycho Donker. Ik ben in 2008 afgestudeerd als vakbekwaam
+          hovenier aan de tuinbouwschool in Enschede. Gedurende mijn opleiding
+          en de jaren daarna heb ik veel ervaring opgedaan in het onderhouden en
+          aanleggen van tuinen.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Na een korte tussenpauze als assistent bedrijfsleider bij een
+          productiebedrijf, heb ik toch mijn hart gevolgd en ben ik weer terug
+          gegaan naar de tuinen. Ik heb altijd al de wens gehad om een eigen
+          bedrijf te starten en uiteindelijk heb ik 2019 besloten de stap te
+          nemen en mij ingeschreven bij de Kamer Van Koophandel. Sindsdien heb
+          ik een netwerk opgebouwd van zzp’ers, leveranciers en opdrachtgevers.
+        </p>
+        <p>
+          Omdat ik niet alles alleen kan, is het fijn om een vertrouwd netwerk
+          van zzp’ers te hebben die kunnen bijspringen waar nodig is. Zo hoeft u
+          niet te lang te wachten voordat uw tuin klaar is maar heeft u toch een
+          direct aanspreekpunt met mij. Ik ben u graag van dienst om voor u uw
+          zorgen weg te nemen en uw droomtuin te onderhouden of te realiseren.
         </p>
       </div>
 
       <img src="img/tycho.jpg" alt="tycho" class="about-me__img" />
     </section>
 
-    <section class="my-portfolio" id="mijn_tuinen">
-      <h2 class="section__title section__title--portfolio">
-        Mijn eerdere werk
-      </h2>
+    <section class="my-portfolio" id="projecten">
+      <h2 class="section__title section__title--portfolio">Projecten</h2>
       <p class="section__subtitle section__subtitle--portfolio">
-        Een selectie van mijn eerdere projecten
+        Een selectie uit mijn eerdere projecten
       </p>
 
-      <div class="portfolio">
-        <!-- Portfolio item 01 -->
-        <a href="portfolio-item.html" class="portfolio__item">
-          <img src="img/portfolio-01.jpg" alt="" class="portfolio__img" />
-        </a>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 15</div>
+          <img src="./img/1.jpg" style="width: 100%" />
+        </div>
 
-        <!-- Portfolio item 02 -->
-        <a href="portfolio-item.html" class="portfolio__item">
-          <img src="img/portfolio-02.jpg" alt="" class="portfolio__img" />
-        </a>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 15</div>
+          <img src="./img/2.jpg" style="width: 100%" />
+        </div>
 
-        <!-- Portfolio item 03 -->
-        <a href="portfolio-item.html" class="portfolio__item">
-          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
-        </a>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 15</div>
+          <img src="./img/3.jpg" style="width: 100%" />
+        </div>
 
-        <!-- Portfolio item 04 -->
-        <a href="portfolio-item.html" class="portfolio__item">
-          <img src="img/portfolio-04.jpg" alt="" class="portfolio__img" />
-        </a>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 15</div>
+          <img src="./img/4.jpg" style="width: 100%" />v>
+        </div>
 
-        <!-- Portfolio item 05 -->
-        <a href="portfolio-item.html" class="portfolio__item">
-          <img src="img/portfolio-05.jpg" alt="" class="portfolio__img" />
-        </a>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 15</div>
+          <img src="./img/5.jpg" style="width: 100%" />
+        </div>
 
-        <!-- Portfolio item 06 -->
-        <a href="portfolio-item.html" class="portfolio__item">
-          <img src="img/portfolio-06.jpg" alt="" class="portfolio__img" />
-        </a>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 15</div>
+          <img src="./img/6.jpg" style="width: 100%" />
+        </div>
 
-        <!-- Portfolio item 07 -->
-        <a href="portfolio-item.html" class="portfolio__item">
-          <img src="img/portfolio-07.jpg" alt="" class="portfolio__img" />
-        </a>
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 15</div>
+          <img src="./img/7.jpg" style="width: 100%" />
+        </div>
 
-        <!-- Portfolio item 08 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-08.jpg" alt="" class="portfolio__img" />
-        </a>
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 15</div>
+          <img src="./img/8.jpg" style="width: 100%" />
+        </div>
 
-        <!-- Portfolio item 09 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-09.jpg" alt="" class="portfolio__img" />
-        </a>
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 15</div>
+          <img src="./img/9.jpg" style="width: 100%" />
+        </div>
 
-        <!-- Portfolio item 0 0-->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-10.jpg" alt="" class="portfolio__img" />
-        </a>
+        <div class="mySlides fade">
+          <div class="numbertext">10 / 15</div>
+          <img src="./img/10.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">11 / 15</div>
+          <img src="./img/11.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">12 / 15</div>
+          <img src="./img/12.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">13 / 15</div>
+          <img src="./img/13.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">14 / 15</div>
+          <img src="./img/14.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">15 / 15</div>
+          <img src="./img/15.jpg" style="width: 100%" />
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+        <span class="dot" onclick="currentSlide(13)"></span>
+        <span class="dot" onclick="currentSlide(14)"></span>
+        <span class="dot" onclick="currentSlide(15)"></span>
       </div>
     </section>
 
     <footer class="footer" id="contact">
-      <a href="mailto:tycho@hoveniersbedrijf.nl" class="footer__link"
-        >tycho@hoveniersbedrijf.nl</a
+      <a
+        href="https://www.google.com/maps/place/Delistraat+36,+7512+BM+Enschede/@52.213713,6.8894859,17z/data=!3m1!4b1!4m5!3m4!1s0x47b8147757a3aa81:0x8770add85e52d861!8m2!3d52.213713!4d6.8916746"
+        class="footer__link"
+        target="_blank"
+        >Tycho Donker<br />Delistraat 36<br />7512 BM Enschede</a
       >
+      <br />
+      <a
+        href="mailto:info@hoveniersbedrijftychodonker.nl"
+        class="footer__link"
+        target="_blank"
+        >info@hoveniersbedrijftychodonker.nl</a
+      >
+      <a href="tel:003151111050" class="footer__link">06-51111050</a>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="https://facebook.com">
+          <a
+            class="social-list__link"
+            href="https://facebook.com"
+            target="_blank"
+          >
             <i class="fab fa-facebook"></i>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://twitter.com/">
+          <a
+            class="social-list__link"
+            href="https://twitter.com/"
+            target="_blank"
+          >
             <i class="fab fa-twitter"></i>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://instagram.com/">
+          <a
+            class="social-list__link"
+            href="https://instagram.com/"
+            target="_blank"
+          >
             <i class="fab fa-instagram"></i>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://linkedin.com">
+          <a
+            class="social-list__link"
+            href="https://linkedin.com"
+            target="_blank"
+          >
             <i class="fab fa-linkedin"></i>
           </a>
         </li>

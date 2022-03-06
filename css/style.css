@@ -144,10 +144,6 @@ header {
   padding: 1em;
 }
 
-.logo {
-  max-width: 100px;
-}
-
 .nav {
   position: fixed;
   background: var(--clr-dark);
@@ -277,12 +273,15 @@ header {
     font-weight: var(--fw-bold);
     color: var(--clr-dark);
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 25px;
+    font-family: var(--ff-primary);
+  }
+  .navitem_desktop:hover {
+    transform: scale(1.1);
   }
 
   .navlink_desktop:hover {
-    background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 15px;
+    background-color: rgba(84, 127, 55, 1);
   }
 }
 
@@ -339,11 +338,8 @@ header {
   .intro__img {
     display: none;
   }
-}
-
-@media (min-width: 800px) {
-  .logo {
-    display: none;
+  .intro {
+    padding: 3em 2em;
   }
 }
 
@@ -358,9 +354,26 @@ header {
   position: relative;
 }
 
+.my-skills button {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 20px;
+  font-family: var(--ff-primary);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #547f37;
+  cursor: pointer;
+}
+
+.my-skills a {
+  text-decoration: none;
+}
+
 .section__title--skills {
   color: var(--clr-accent);
   position: relative;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .section__title--skills::after {
@@ -447,29 +460,116 @@ header {
   text-align: center;
 }
 
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* Slideshow container */
+@media only screen and (min-width: 1000px) {
+  .slideshow-container {
+    width: 1000px;
+    height: 700px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
 }
 
-.portfolio__item {
-  background: var(--clr-accent);
-  overflow: hidden;
+@media only screen and (max-width: 1000px) {
+  .slideshow-container {
+    width: 310px;
+    height: 224px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
 }
 
-.portfolio__img {
-  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-.portfolio__item:focus {
-  position: relative;
-  z-index: 2;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-  transform: scale(1.2);
-  opacity: 0.5;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* footer */
@@ -488,7 +588,10 @@ header {
 }
 
 .footer__link {
+  display: flex;
   font-weight: var(--fw-bold);
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__link:hover,
@@ -506,6 +609,7 @@ header {
   justify-content: center;
   margin: 2em 0 0;
   padding: 0;
+  display: none;
 }
 
 .social-list__item {
