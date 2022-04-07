@@ -356,14 +356,21 @@ header {
 
 .my-skills button {
   display: inline-flex;
-  align-items: center;
+  align-items: flex-end;
   border-radius: 20px;
   font-family: var(--ff-primary);
   border: none;
-  padding: 10px 20px;
   font-weight: bold;
   background-color: #547f37;
+  padding: 0.5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
   cursor: pointer;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
 }
 
 .my-skills a {
