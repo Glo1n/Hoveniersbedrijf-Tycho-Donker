@@ -33,6 +33,10 @@ img {
   padding-top: 0;
 }
 
+#fotoonderhoud {
+  max-width: 600px;
+}
+
 #tuinaanleg {
   padding-top: 0;
 }
